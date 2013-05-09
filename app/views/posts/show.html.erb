@@ -1,0 +1,103 @@
+<p id="notice"><%= notice %></p>
+
+<!--<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+-->
+
+ <DIV id="append_parent"></DIV>
+    <DIV id="ajaxwaitid"></DIV>
+
+    <DIV id="hd" class="wp cl">
+        <H2 id="spaceinfoshow"><STRONG id="spacename" class="mbn"><%= @post.name %> 的个人空间</STRONG>
+            <SPAN class="xs0 xw0"></SPAN>
+            <SPAN id="spacedescription" class="xs1 xw0 mtn"></SPAN>
+        </H2>
+        <DIV id="nv">
+            <UL>
+				<LI><A href="#">空间首页</A></LI>
+				<LI><A href="#">动态</A></LI>
+				<LI><A href="">记录</A></LI>
+				<LI><A href="">日志</A></LI>
+				<LI><A href="">相册</A></LI>
+				<LI><A href="">分享</A></LI>
+				<LI><A href="">好友</A></LI>
+				<LI><A href="">留言板</A></LI>
+				<LI><A href="">个人资料</A></LI>
+			</UL>
+		</DIV>
+	</DIV>
+
+	<DIV id="ct" class="ct2 wp cl">
+		<DIV class="mn">
+			<DIV class="bm">
+				<DIV class="bm_h cl">
+					<H1 class="mt">日志</H1>
+				</DIV>
+				<DIV class="bm_c">
+					<DIV class="vw mbm">
+						<DIV class="h pbm">
+   							<H1 class="ph">  <%= @post.title %></H1>
+   							<P class="xg2">
+   								<SPAN class="xg1">已有 1 次阅读</SPAN><SPAN class="xg1">2012-10-17 23:07</SPAN>
+   								<SPAN class="pipe">|</SPAN>
+   								<SPAN class="ptg xg1"><A href="#" target="_blank">情感</A></SPAN>
+   							</P>
+						</DIV>
+						<DIV id="blog_article" class="d cl">
+							  <%= @post.content %>
+						</DIV>
+						<DIV id="click_div">
+	<TABLE cellpadding="0" cellspacing="0" class="atd">
+        <TBODY>
+	        <TR>
+		        <TD>
+                    <A href="#"><IMG src="./残梦 - Lemon的日志 交大论坛_files/luguo.gif" alt=""><BR>路过</A>
+                    <%= link_to 'Edit', edit_post_path(@post) %> |
+					<%= link_to 'Back', posts_path %>
+                </TD>
+            </TR>
+        </TBODY>
+    </TABLE>
+						</DIV>
+					</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+		<DIV class="sd"><DIV id="pcd" class="bm cl">
+		<DIV>
+		<DIV class="hm">
+			<P><A href="#"><IMG src="./残梦 - Lemon的日志 交大论坛_files/avatar.php"></A></P>
+			<H2 class="xs2"><A href="#">Lemon</A></H2>
+		</DIV>
+	</DIV>
+</DIV>
+
+    <DIV id="ft" class="wp cl">
+		<DIV id="flk" class="y">
+			<P><STRONG><A href="http://202.115.74.3/sns/upload/portal.php" target="_blank">锦城驿站</A></STRONG>
+				( <A href="localhots:3000" target="_blank">测试</A> )  <SCRIPT src="./残梦 - Lemon的日志 交大论坛_files/stat.php" language="JavaScript"></SCRIPT><SCRIPT src="./残梦 - Lemon的日志 交大论坛_files/cnzz_core.php" charset="utf-8" type="text/javascript"></SCRIPT><A href="http://www.cnzz.com/stat/website.php?web_id=2593686" target="_blank" title="站长统计">站长统计</A>
+			</P>
+			<P class="xs0">
+				GMT+8, 2012-10-20 11:27
+				<SPAN id="debuginfo">, Processed in 0.039412 second(s), 12 queries.</SPAN>
+			</P>
+		</DIV>
+		<DIV id="frt">
+			
+		</DIV>
+	</DIV>
+	<SPAN id="scrolltop" onclick="window.scrollTo(&#39;0&#39;,&#39;0&#39;)" style="left: 1160px; visibility: hidden; ">回顶部</SPAN>
+	<SCRIPT type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</SCRIPT>

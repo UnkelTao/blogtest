@@ -1,0 +1,19 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>博客系统</title>
+   
+    <base href=".">
+    <%= stylesheet_link_tag    "style_2_common.css","style_2_home_space.css","style_2_css_space.css","style.css" %>
+  	<%= javascript_include_tag "application" %>
+  	<%= csrf_meta_tags %>
+    <style id="diy_style">#ct {background-repeat:repeat !important;}</style>
+</head>
+
+<body id="space" onkeydown="if(event.keycode==27) return false;">
+ <%= yield %>
+</body>
+</html>
